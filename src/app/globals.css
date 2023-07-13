@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities {
+  .btn-polygon {
+      clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .table-polygon {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .text-primary-color {
+      color: #1EB3A6;
+  }
+
+  .bg-navbar {
+      background: rgba(228, 217, 217, 0.1);
+  }
+
+  .bg-navbar-2 {
+      background: rgba(30, 179, 166, 0.2);
+  }
+
+  .text-hover {
+      color: rgba(1, 84, 77, 1);
+      transition: all ease 0.3s;
+  }
+
+  .bg-yellow {
+      background-color: rgba(255, 153, 0, 1)
+  }
+
+  .bg-primary {
+      background-color: rgba(91, 192, 183, 1);
+  }
+
+  .secondary-text {
+      color: #1EB3A6;
+  }
+
+  .text-latest-news-color {
+      color: #0D1530CC;
+  }
+
+  .banner-height {
+      height: calc(100vh - 130px)
+  }
+
+  .file input[type="file"] {
+      display: none
+  }
 }

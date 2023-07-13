@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1080px",
+        xl: "1580px",
+      },
+      fontFamily: {
+        bangla: ["Kalpurush", "sans-serif"],
+        cursive: ["Meie Script", "cursive"],
+      },
+      colors: {
+        "primary-text": "rgba(13, 21, 48, 0.8)",
+        backdrop: "rgba(0, 0, 0, 0.6)",
       },
     },
   },
